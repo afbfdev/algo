@@ -1,0 +1,43 @@
+//Longueur de la phrase//
+
+Variable Hello word. en Caractère
+Variables Nbr, i en Entier
+Debut
+Ecrire "Entrez une phrase : "
+Lire Hello word.
+Nbr ← Len(Hello word.)
+Ecrire "Ce mot compte ", Nbr, "caractères"
+Fin
+
+//Le nombre de mots dans la phrase//
+
+Variable Hello word. en Caractère
+Variables Nbr, i en Entier
+Debut
+ Ecrire "Entrez une phrase : "
+ Lire Hello word.
+ Nbr ← 0
+ Pour i ← 1 à Len(Hello word.)
+  Si Mid(Hello word., i , 1) = " " Alors
+    Nbr ← Nbr + 1
+  FinSi
+ i suivant
+ Ecrire "Cette phrase compte ", Nbr + 1, " mots"
+Fin
+
+//Le nombre de voyelles dans la phrase//
+
+Variable Hello word. en Caractère
+Variables Nbr, i en Entier
+Debut 
+ Ecrire "Entrez une phrase : "
+  Lire Hello word.
+Nbr ← 0
+Pour i ← 1 à Len(Hello word.)
+  Si Mid(Hello word., i, 1) = "a" ou Mid(Hello word., i, 1) = "e" ou Mid(Hello word., i, 1) = "i"
+ ou Mid(Hello word., i, 1) = "o" ou Mid(Hello word., i, 1) = "u" ou Mid(Hello word., i, 1) = "y" Alors
+    Nbr ← Nbr + 1
+  FinSi
+i suivant
+Ecrire "Cette phrase compte ", Nbr, " voyelles"
+Fin
