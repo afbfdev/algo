@@ -1,0 +1,20 @@
+ALGORITHM PHRASE
+VAR
+    s : STRING
+    i , v : INTEGER := 0
+    k : INTEGER := 1
+    j : CHAR := " " c := s[i]
+    c = s.length
+BEGIN
+    write('ecrivez une phrase se termine par un point')
+    read (s)
+    FOR i FROM 0 TO s.length-1 STEP 1  DO
+        IF (s[i] = j) THEN
+            k++
+            c--
+        ELSE_IF (s[i] = 'a' || s[i] = 'e' || s[i] = 'i' || s[i] = 'o' || s[i] = 'u') THEN
+            v++
+        END_IF
+    END_FOR
+    write('le nombre de caractere est : ', i ,' le nombre de mot est : ', k,' le nombre de voyelle est : ',v)
+END
